@@ -39,14 +39,10 @@ Run the following command on the terminal:
      python3 manage.py test 
 
 ### Admin Dashboard
-    (https://theawwards.herokuapp.com/admin)
-    username: moringa
-    password: moringa123
+    (https://nickawwards.herokuapp.com/admin)
+    username: 
+    password: 
 
-
-### Acccessing the API 
-[Profiles Endpoint](https://theawwards.herokuapp.com/api/profileApi)
-[Projects Endpoint](https://theawwards.herokuapp.com/api/projectsApi)    
 
 ### Search functionality
     search by project name 

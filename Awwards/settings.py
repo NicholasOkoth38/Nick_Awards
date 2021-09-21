@@ -21,9 +21,9 @@ import cloudinary.uploader
 import cloudinary.api
 
 cloudinary.config(
-    cloud_name="jos254",
-    api_key="888584575498376",
-    api_secret="jS8SX99ro6Cecs2oUxLshigg5ug",
+    cloud_name="dephxwpkn",
+    api_key="299887178964631",
+    api_secret="b5F59tCE-wJkgvVZtbF3hldHHXE",
     secure=True
 )
 

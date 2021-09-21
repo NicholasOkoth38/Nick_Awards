@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container">
+    <div class="row" style="margin-top: 5px;">
+        <div class="jumbotron" style="background-color: white;">
+            <h2 class="text-center">Post Award</h2>
+            <p>Welcome to Awards where you van post awards.</p>
+        </div>
+        <div class="col-md-3"></div>
+
+        <div class="col-md-6 panel panel-default">
+
+            <div class="panel-heading">
+                <h3 class="text-center">Submit Award</h3>
+            </div>
+            <div class="panel-body">
+
+                <form action="{%url 'new-project'%}" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-sm" value="Submit">
+                    </div>
+                    <input type="hidden" name="next" value="{{next}}">
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+{% endblock %}
+</div>

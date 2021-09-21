@@ -1,0 +1,32 @@
+{%extends 'base.html'%}
+{% load static %}
+{% load bootstrap3 %}
+{% block content %}
+<div class="container-fluid"
+    style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4uSx3UbXkkvh2Z1Zb69GRQDuwW6d7rZnCpA&usqp=CAU');
+background-position: center center; background-size: cover;width: 360; height: 400px;">
+
+</div>
+<div class="container">
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-4 ">
+            <div class="panel" style="height:360px;margin-bottom:10px;">
+                <div class="panel-body">
+                    <a href="{% url 'allProjects' id=project.id %}">
+                        <img class="img-responsive" src="{{project.image.url}}" style="height:260px;width:100%;">
+                    </a>
+                    <div class="panel-footer">
+                        <div class="text">{{project.title}}</div>
+                        <div class="details"><a href="{% url 'allProjects' id=project.id %}" class="btn btn-info">View 
+                                </a></div>
+                                <hr>
+                        <p style="font-size:16px;">By : {{project.user}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

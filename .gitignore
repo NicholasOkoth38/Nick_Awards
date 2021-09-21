@@ -1,0 +1,4 @@
+.env
+virtual
+migrations
+db.sqlite3

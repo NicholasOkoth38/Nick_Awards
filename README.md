@@ -34,14 +34,12 @@ Run the following command on the terminal:
 6. Run the application
     ### Run 
     python3.8 manage.py runserver
-
+\
 7.  Testing the application
      python3 manage.py test 
 
 ### Admin Dashboard
-    (https://nickawwards.herokuapp.com/admin)
-    username: 
-    password: 
+    (https://nickawwards.herokuapp.com/admin) 
 
 
 ### Search functionality

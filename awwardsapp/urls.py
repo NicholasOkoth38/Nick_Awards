@@ -22,3 +22,4 @@ urlpatterns=[
     url(r'^api/profileApi/$', views.ProfileList.as_view()),
       url(r'^api-token-auth/', obtain_auth_token),
 ]
+

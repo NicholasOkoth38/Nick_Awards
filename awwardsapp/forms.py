@@ -45,3 +45,4 @@ class RatingForm(forms.ModelForm):
         exclude = ['user', 'project', 'average', 'date']
 
 
+

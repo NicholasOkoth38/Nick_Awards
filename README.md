@@ -19,13 +19,13 @@ Awards is a website where a user can register for an account, post projects as w
 Run the following command on the terminal:
 `git clone 
 
-
 ###  Project Setup
 1. Create virtual environment (python3 -m venv virtual)
 2. Activate virtual environment (. virtual/bin/activate)
 3. Install  all dependancies ( pip install -r requirements.txt)
 4. Create database (CREATE DATABASE;)
 5. Make migrations
+
 
     #### Database Migrations
     python3 manage.py makemigrations 
